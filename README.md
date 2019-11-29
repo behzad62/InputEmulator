@@ -39,4 +39,4 @@ InputEmulator is licensed under [GNU Lesser General Public License v3 (LGPL-3.0)
 
 [latest-release]: https://github.com/behzad62/InputEmulator/releases/latest
 [wdk]: https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk
-[licenses]: https://github.com/behzad62/InputEmulator/tree/master/licenses
+[licenses]: https://github.com/behzad62/InputEmulator/blob/master/LICENSE
