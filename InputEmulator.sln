@@ -19,7 +19,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KeyboardEmulator", "Sys\Key
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exe", "Exe", "{9A21FA52-834F-4F06-AFB7-A3F7432A7753}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KeyboardEmuTest", "exe\Native\KbdEmuTest\kbftest.vcxproj", "{CB35D9AC-AD35-4381-ADA4-84378289F086}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KeyboardEmuTest", "exe\Native\KbdEmuTest\KbdEmuTest.vcxproj", "{CB35D9AC-AD35-4381-ADA4-84378289F086}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KbdEmuTest", "exe\Managed\KbdEmuTest\KbdEmuTest.csproj", "{02FB6C3B-97FC-4019-B873-3AA0F0FC5D6F}"
 EndProject
