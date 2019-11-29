@@ -1,0 +1,7 @@
+C:\Users\b_a_s\source\repos\KeyboardEmulator\Dll\Managed\KeyboardEmuAPI\bin\Debug\netstandard2.0\KeyboardEmuAPI.deps.json
+C:\Users\b_a_s\source\repos\KeyboardEmulator\Dll\Managed\KeyboardEmuAPI\bin\Debug\netstandard2.0\KeyboardEmuAPI.dll
+C:\Users\b_a_s\source\repos\KeyboardEmulator\Dll\Managed\KeyboardEmuAPI\bin\Debug\netstandard2.0\KeyboardEmuAPI.pdb
+C:\Users\b_a_s\source\repos\KeyboardEmulator\Dll\Managed\KeyboardEmuAPI\obj\Debug\netstandard2.0\KeyboardEmuAPI.AssemblyInfoInputs.cache
+C:\Users\b_a_s\source\repos\KeyboardEmulator\Dll\Managed\KeyboardEmuAPI\obj\Debug\netstandard2.0\KeyboardEmuAPI.AssemblyInfo.cs
+C:\Users\b_a_s\source\repos\KeyboardEmulator\Dll\Managed\KeyboardEmuAPI\obj\Debug\netstandard2.0\KeyboardEmuAPI.dll
+C:\Users\b_a_s\source\repos\KeyboardEmulator\Dll\Managed\KeyboardEmuAPI\obj\Debug\netstandard2.0\KeyboardEmuAPI.pdb

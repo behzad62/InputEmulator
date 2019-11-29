@@ -1,0 +1,7 @@
+C:\Users\b_a_s\source\repos\KeyboardEmulator\Dll\Managed\MouseEmuAPI\bin\Debug\netstandard2.0\MouseEmuAPI.deps.json
+C:\Users\b_a_s\source\repos\KeyboardEmulator\Dll\Managed\MouseEmuAPI\bin\Debug\netstandard2.0\MouseEmuAPI.dll
+C:\Users\b_a_s\source\repos\KeyboardEmulator\Dll\Managed\MouseEmuAPI\bin\Debug\netstandard2.0\MouseEmuAPI.pdb
+C:\Users\b_a_s\source\repos\KeyboardEmulator\Dll\Managed\MouseEmuAPI\obj\Debug\netstandard2.0\MouseEmuAPI.AssemblyInfoInputs.cache
+C:\Users\b_a_s\source\repos\KeyboardEmulator\Dll\Managed\MouseEmuAPI\obj\Debug\netstandard2.0\MouseEmuAPI.AssemblyInfo.cs
+C:\Users\b_a_s\source\repos\KeyboardEmulator\Dll\Managed\MouseEmuAPI\obj\Debug\netstandard2.0\MouseEmuAPI.dll
+C:\Users\b_a_s\source\repos\KeyboardEmulator\Dll\Managed\MouseEmuAPI\obj\Debug\netstandard2.0\MouseEmuAPI.pdb
