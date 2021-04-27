@@ -29,7 +29,8 @@ Drivers can be installed through the command line installer. You need to run the
 with administrative rights and restart your PC afterwards for installation to take effect.
 
 Run `installer.exe` without any arguments inside a command prompt 
-to see the instructions for installation.
+to see the instructions for installation. (Warning: do not try to install unsinged driver 
+with installer unless you are sure the test signing is on)
 
 License
 -------
