@@ -1,4 +1,10 @@
-
+/Dll/Managed/KeyboardEmuAPI/obj
+/Dll/Managed/MouseEmuAPI/obj
+exe/Managed/Installer/obj
+exe/Managed/kbdemutest/obj
+exe/Managed/MouseEmuTest/obj
+exe/Managed/MouseEmuTest/bin
+Dll/Managed/MouseEmuAPI/bin
 *.cache
 .vs
 *.json

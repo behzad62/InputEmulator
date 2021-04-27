@@ -83,7 +83,7 @@ typedef struct _CONTROL_DEVICE_EXTENSION {
 	//
 	//Current input device target which receives filtering etc.
 	//
-	USHORT   ActiveMouseId;
+	USHORT   ActiveKeyboardId;
 	//
 	//Is used to signal when user wants to detect the current input device
 	//

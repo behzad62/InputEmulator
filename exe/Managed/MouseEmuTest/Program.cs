@@ -255,10 +255,10 @@ namespace KbdEmuTest
                             return;
                         }
                         var inputData = new Mouse_Input_Data();
-                        Mouse_Input_Data[] inputs = new Mouse_Input_Data[1] { inputData };
                         inputData.Flags = MouseFlag.MOUSE_MOVE_ABSOLUTE | MouseFlag.MOUSE_VIRTUAL_DESKTOP;
                         inputData.LastX = x;
                         inputData.LastY = y;
+                        Mouse_Input_Data[] inputs = new Mouse_Input_Data[1] { inputData };
                         if (delay > 0)
                             Task.Delay(delay).Wait();
                         MouseEmulatorAPI.Instance.MouseInsertInputs(inputs);

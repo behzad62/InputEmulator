@@ -572,7 +572,7 @@ KbFilter_EvtIoInternalDeviceControl(
 
 Routine Description:
 
-	This routine is the dispatch routine for internal device control requests.
+	This routine is the dispatch routine for internal filter device control requests.
 	There are two specific control codes that are of interest:
 
 	IOCTL_INTERNAL_KEYBOARD_CONNECT:
@@ -883,7 +883,7 @@ Return Value:
 		noItems = (USHORT)WdfCollectionGetCount(FilterDeviceCollection);
 		if (noItems == 0) {
 			status = STATUS_INVALID_PARAMETER;
-			controlExt->ActiveMouseId = 0;
+			controlExt->ActiveKeyboardId = 0;
 			DebugPrint(("Not any filter device found.\n"));
 			WdfWaitLockRelease(FilterDeviceCollectionLock);
 			break;
@@ -894,7 +894,7 @@ Return Value:
 			WdfWaitLockRelease(FilterDeviceCollectionLock);
 			break;
 		}
-		controlExt->ActiveMouseId = *keyboardIdBuffer;
+		controlExt->ActiveKeyboardId = *keyboardIdBuffer;
 		WdfWaitLockRelease(FilterDeviceCollectionLock);
 #pragma endregion
 		break;
@@ -933,7 +933,7 @@ Return Value:
 			break;
 		}
 
-		hFilterDevice = WdfCollectionGetItem(FilterDeviceCollection, controlExt->ActiveMouseId);
+		hFilterDevice = WdfCollectionGetItem(FilterDeviceCollection, controlExt->ActiveKeyboardId);
 
 		WdfWaitLockRelease(FilterDeviceCollectionLock);
 
@@ -971,7 +971,7 @@ Return Value:
 			break;
 		}
 
-		hFilterDevice = WdfCollectionGetItem(FilterDeviceCollection, controlExt->ActiveMouseId);
+		hFilterDevice = WdfCollectionGetItem(FilterDeviceCollection, controlExt->ActiveKeyboardId);
 
 		WdfWaitLockRelease(FilterDeviceCollectionLock);
 
@@ -1074,7 +1074,7 @@ Return Value:
 			break;
 		}
 
-		hFilterDevice = WdfCollectionGetItem(FilterDeviceCollection, controlExt->ActiveMouseId);
+		hFilterDevice = WdfCollectionGetItem(FilterDeviceCollection, controlExt->ActiveKeyboardId);
 
 		WdfWaitLockRelease(FilterDeviceCollectionLock);
 
@@ -1153,7 +1153,7 @@ Return Value:
 			break;
 		}
 
-		hFilterDevice = WdfCollectionGetItem(FilterDeviceCollection, controlExt->ActiveMouseId);
+		hFilterDevice = WdfCollectionGetItem(FilterDeviceCollection, controlExt->ActiveKeyboardId);
 
 		WdfWaitLockRelease(FilterDeviceCollectionLock);
 
@@ -1215,7 +1215,7 @@ Return Value:
 			break;
 		}
 
-		hFilterDevice = WdfCollectionGetItem(FilterDeviceCollection, controlExt->ActiveMouseId);
+		hFilterDevice = WdfCollectionGetItem(FilterDeviceCollection, controlExt->ActiveKeyboardId);
 
 		WdfWaitLockRelease(FilterDeviceCollectionLock);
 
@@ -1264,7 +1264,7 @@ Return Value:
 			WdfWaitLockRelease(FilterDeviceCollectionLock);
 			break;
 		}
-		hFilterDevice = WdfCollectionGetItem(FilterDeviceCollection, controlExt->ActiveMouseId);
+		hFilterDevice = WdfCollectionGetItem(FilterDeviceCollection, controlExt->ActiveKeyboardId);
 		WdfWaitLockRelease(FilterDeviceCollectionLock);
 
 		filterExt = FilterGetData(hFilterDevice);
@@ -1338,7 +1338,7 @@ Return Value:
 		}
 		WdfWaitLockAcquire(FilterDeviceCollectionLock, NULL);
 		noItems = (USHORT)WdfCollectionGetCount(FilterDeviceCollection);
-		keboardIds.ActiveDeviceId = controlExt->ActiveMouseId;
+		keboardIds.ActiveDeviceId = controlExt->ActiveKeyboardId;
 		WdfWaitLockRelease(FilterDeviceCollectionLock);
 		keboardIds.NumberOfDevices = noItems;
 		status = WdfMemoryCopyFromBuffer(outputMemory,
@@ -1606,7 +1606,7 @@ Return Value:
 	filterDevice = (WDFDEVICE)Context;
 	WdfWaitLockAcquire(FilterDeviceCollectionLock, NULL);
 	noItems = WdfCollectionGetCount(FilterDeviceCollection);
-	deviceId = controlExt->ActiveMouseId;
+	deviceId = controlExt->ActiveKeyboardId;
 	for (USHORT i = 0; i < noItems; i++)
 	{
 		if (filterDevice == WdfCollectionGetItem(FilterDeviceCollection, i)) {
@@ -1614,7 +1614,7 @@ Return Value:
 			break;
 		}
 	}
-	controlExt->ActiveMouseId = deviceId;
+	controlExt->ActiveKeyboardId = deviceId;
 	WdfWaitLockRelease(FilterDeviceCollectionLock);
 
 
